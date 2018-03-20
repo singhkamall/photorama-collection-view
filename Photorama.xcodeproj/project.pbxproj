@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C77B229920607FCE000B16A1 /* PhotoDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77B229820607FCE000B16A1 /* PhotoDataSource.swift */; };
+		C77B229B20608645000B16A1 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77B229A20608645000B16A1 /* PhotoCollectionViewCell.swift */; };
 		C7D11C352057511C00DA2928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D11C342057511C00DA2928 /* AppDelegate.swift */; };
 		C7D11C3A2057511C00DA2928 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7D11C382057511C00DA2928 /* Main.storyboard */; };
 		C7D11C3C2057511C00DA2928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7D11C3B2057511C00DA2928 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C77B229820607FCE000B16A1 /* PhotoDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDataSource.swift; sourceTree = "<group>"; };
+		C77B229A20608645000B16A1 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		C7D11C312057511C00DA2928 /* Photorama.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photorama.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7D11C342057511C00DA2928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7D11C392057511C00DA2928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				C7D11C482057514800DA2928 /* FlickrAPI.swift */,
 				C7D11C4A2057514800DA2928 /* PhotoStore.swift */,
 				C7D11C4C2057514800DA2928 /* Photo.swift */,
+				C77B229820607FCE000B16A1 /* PhotoDataSource.swift */,
+				C77B229A20608645000B16A1 /* PhotoCollectionViewCell.swift */,
 			);
 			path = Photorama;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 				C7D11C492057514800DA2928 /* FlickrAPI.swift in Sources */,
 				C7D11C472057514800DA2928 /* PhotosViewController.swift in Sources */,
 				C7D11C4B2057514800DA2928 /* PhotoStore.swift in Sources */,
+				C77B229920607FCE000B16A1 /* PhotoDataSource.swift in Sources */,
+				C77B229B20608645000B16A1 /* PhotoCollectionViewCell.swift in Sources */,
 				C7D11C352057511C00DA2928 /* AppDelegate.swift in Sources */,
 				C7D11C4D2057514800DA2928 /* Photo.swift in Sources */,
 			);
@@ -287,6 +295,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = Photorama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gotransit.gotrnasitapp.Photorama;
@@ -301,6 +310,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2BULHRS882;
 				INFOPLIST_FILE = Photorama/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gotransit.gotrnasitapp.Photorama;

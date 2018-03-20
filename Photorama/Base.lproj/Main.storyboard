@@ -18,22 +18,60 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="52m-yC-pDn">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Twi-eH-5aR">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                            </imageView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="bWW-Jw-tEt">
+                                    <size key="itemSize" width="90" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PhotoCollectionViewCell" id="KMN-1T-VMR" customClass="PhotoCollectionViewCell" customModule="Photorama" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="2" width="90" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5fH-Jp-99Q">
+                                                    <rect key="frame" x="0.0" y="0.0" width="90" height="50"/>
+                                                </imageView>
+                                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="gLY-cy-7tR">
+                                                    <rect key="frame" x="35" y="15" width="20" height="20"/>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="gLY-cy-7tR" firstAttribute="centerX" secondItem="KMN-1T-VMR" secondAttribute="centerX" id="4s8-XY-eCq"/>
+                                            <constraint firstItem="5fH-Jp-99Q" firstAttribute="leading" secondItem="KMN-1T-VMR" secondAttribute="leading" id="A1G-R5-LjZ"/>
+                                            <constraint firstItem="gLY-cy-7tR" firstAttribute="centerY" secondItem="KMN-1T-VMR" secondAttribute="centerY" id="EDU-TW-zbW"/>
+                                            <constraint firstAttribute="trailing" secondItem="5fH-Jp-99Q" secondAttribute="trailing" id="GXt-Oa-QUH"/>
+                                            <constraint firstAttribute="bottom" secondItem="5fH-Jp-99Q" secondAttribute="bottom" id="Pjc-70-aWB"/>
+                                            <constraint firstItem="5fH-Jp-99Q" firstAttribute="top" secondItem="KMN-1T-VMR" secondAttribute="top" id="qxl-8v-XfD"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="imageView" destination="5fH-Jp-99Q" id="po0-x8-aaJ"/>
+                                            <outlet property="spinner" destination="gLY-cy-7tR" id="Uzk-XQ-X0T"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="52m-yC-pDn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1Sm-zo-iAm"/>
-                            <constraint firstItem="52m-yC-pDn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9dP-aW-E5I"/>
-                            <constraint firstItem="52m-yC-pDn" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Bmj-zb-Erg"/>
-                            <constraint firstItem="52m-yC-pDn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Xd6-JV-36A"/>
+                            <constraint firstItem="Twi-eH-5aR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="G6i-Ug-qtJ"/>
+                            <constraint firstItem="Twi-eH-5aR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="K3f-fW-lte"/>
+                            <constraint firstItem="Twi-eH-5aR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KF8-mt-JTb"/>
+                            <constraint firstItem="Twi-eH-5aR" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mk8-bA-fcD"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Photorama" id="itc-gu-h7c"/>
                     <connections>
-                        <outlet property="imageView" destination="52m-yC-pDn" id="1Jf-TV-2XD"/>
+                        <outlet property="collectionView" destination="Twi-eH-5aR" id="6ZF-om-6ce"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
